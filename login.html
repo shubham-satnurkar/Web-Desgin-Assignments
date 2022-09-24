@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta charset=utf-8>
+		<meta name="keyword" content=" html, css, javascript, php, jquery.">
+		<meta name=description content="Registration Form">
+		<meta name="author" content="shubham satnurkar">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Login Form</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<section class="reg-form log-form">
+			<marquee><h3 style="color: #fff;">You Have Register successfully..! Please Log In</h3></marquee>
+			<h1>Login Form</h1>
+			<form class="form" action="login.html">
+				<div class="form-group log">
+					<label for="Username">Username</label>
+					<input type="email" name="email" class="input" placeholder="xyz@email.com" required>
+				</div>
+				<div class="form-group log">
+					<label for="password">Password</label>
+					<input type="password" class="input" name="password"  placeholder="*********" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{5,10}" required>
+				</div>
+				<div class="form-group log">
+					<label>Don't have an account <a href="reg-form.html">Register Here.</a></label>		
+					<label><a href="#">Forget Password?</a></label>			
+				</div>
+				<div class="btn log">
+					<input type="submit" name="login" value="Log In">
+				</div>
+			</form>
+		</section>
+	</body>
+</html>

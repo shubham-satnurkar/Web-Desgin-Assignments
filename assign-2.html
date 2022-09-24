@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keyword" content="keywords which use to rank the website.">
+        <meta name="description" content="Description of the website so that it help user.">
+        <meta name="author" content="author name">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment-2</title>
+       
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <form>
+            <table border="1" cellpadding="15" cellspacing="0">
+                <tr>
+                    <th colspan="4"><font color="Red" size="5">Resgistration Form</font></th>
+                </tr>
+                <tr>
+                    <th><label for="First Name">First Name</label></th>
+                    <td><input type="text" name="fname" id="fname" maxlength="15" minlength="2" required></td>
+                    <th><label for="Last Name">Last Name</label></th>
+                    <td><input type="text" id="lname" name="lname" minlength="2" maxlength="20" required></td>
+                </tr>
+                <tr>
+                    <th><label for="Email">Email</label></th>
+                    <td><input type="email" name="email" id="email"  required></td>
+                    <th><label for="Password">Password</label></th>
+                    <td><input type="password" id="pass" name="pass" minlength="5" maxlength="16" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{5,16}" required></td>
+                </tr>
+                <tr>
+                    <th><label for="Confirm Password">Confirm Password</label></th>
+                    <td><input type="password" id="cpass" name="cpass"  required></td>
+                    <th><label for="Mobile">Mobile</label></th>
+                    <td><input type="text" name="mobile" id="mobile" minlength="10" maxlength="10"  pattern="[0-9]*{10,10}" required></td> 
+                </tr>
+                <tr>
+                    <th><label for="Date Of Birth">Date Of Birth</label></th>
+                    <td><input type="number" id="age" name="age" min="15" max="100"  required></td>
+                    <th><label for="Gender">Gender</label></th>
+                    <td>
+                        <label for="Male">Male </label><input type="radio" name="gender" id="male" value="male" required>
+                        <label for="Female">Female</label><input type="radio" name="gender" id="female" value="female" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="Address">Address</label></th>
+                    <td><textarea name="address"  id="address" cols="25" rows="5" required></textarea></td>
+                    <th><label for="city">Choose City</label></th>
+                    <td>
+                        <select name="city" id="city" required>
+                            <option value="Nagpur">Nagpur</option>
+                            <option value="Amravati">Amravati</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Mumbai">Mumbai</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="state">Choose State</label></th>
+                    <td>
+                        <select name="state" id="state" required>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Gujrat">Gujrat</option>
+                            <option value="Bangluru">Bangluru</option>
+                            <option value="Punjab">Punjab</option>
+                        </select>
+                    </td>
+                    <th><label for="picode">Pincode</label></th>
+                    <td><input type="text" id="pincode" maxlength="6" minlength="6" pattern="[0-9]*" required></td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2">
+                        <label for="doc">Upload Document :</label>
+                        <input type="file" value="doc" name="doc" id="doc">
+                    </td>
+                    <td colspan="2">
+                        <label for="Subject">Subject List:</label>
+                        <select name="sub" id="sub">
+                            <optgroup label="Science">
+                                <option value="Physics">Physics</option>
+                                <option value="Biology">Biology</option>
+                                <option value="Chemistry">Chemistry</option>
+                                <option value="Computer Science">Computer Science</option>
+                            </optgroup>
+                            <optgroup label="Commerce">
+                                <option value="Economics">Economics</option>
+                                <option value="Accountancy ">Accountancy </option>
+                                <option value="Business Studies">Business Studies</option>
+                                <option value="English ">English </option>
+                            </optgroup>
+                            <optgroup label="Art">
+                                <option value="Political Science">Political Science</option>
+                                <option value="Economics">Economics</option>
+                                <option value="Psychology">Psychology</option>
+                                <option value="Geography">Geography</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2"><input type="submit" value="Register"></td>
+                    <td colspan="2"><input type="reset" value="Cancel"></td>
+                </tr>
+            </table>
+        </form>
+        <br><hr><br>
+
+        <h1>HTML4 & 5 Tags</h1>
+
+        <address>
+            Shubham Satnurkar <br>
+            Vishwakarma Nagar, <br>
+            Nagpur -440027, Maharashtra.
+        </address>
+
+        <br><hr><br>
+        
+        <picture>
+            <source srcset="img/img-1.jpg" media="(min-width:650px)">
+            <img src="img/img-1.jpg" alt="" width="400">
+        </picture>
+
+        <br><hr><br>
+
+        <abbr title="Hypertexrt Markup Language">HTML </abbr>is skeleton of website.
+
+        <br><hr><br>
+
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </p>
+        <p>
+            <bdo dir="rtl">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</bdo>
+        </p>
+
+        <br><hr><br>
+
+        <form >
+            <label for="Skills">Choose your Technology from the list:</label>
+            <input list="skill" name="skills" id="skills">
+            <datalist id="skill">
+              <option value="HTML">
+              <option value="CSS">
+              <option value="Bootstrap">
+              <option value="JavaScript">
+                <option value="PHP">
+              <option value="Laravel">
+              <option value="Python">
+              <option value="React">
+                <option value="Angular">
+            </datalist>
+            <input type="submit">
+          </form>
+          
+          <br><hr><br>
+
+          <!-- <div contextmenu="popup-menu">
+            Right-click to see the adjusted context menu
+          </div> -->
+          
+          <menu type="context" id="popup-menu">
+            <menuitem type="checkbox" checked>Checkbox</menuitem>
+            <hr>
+            <menuitem type="command" label="This command does nothing" icon="favicon-192x192.png">
+              Commands don't render their contents.
+            </menuitem>
+            <menuitem type="command" label="This command has javascript" onclick="alert('command clicked')">
+              Commands don't render their contents.
+            </menuitem>
+            <hr>
+            <menuitem type="radio" radiogroup="group1">Radio Button 1</menuitem>
+            <menuitem type="radio" radiogroup="group1">Radio Button 2</menuitem>
+          </menu>
+
+          <br><hr><br>
+          
+        <pre >
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem  Ipsum has been the industry's standard dummy text ever since the 1500s
+        </pre>
+
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sapiente quasi eaque neque, <wbr>minus<wbr> nobis iste qui sunt itaque. Consectetur sint incidunt nostrum doloribus eum, quia necessitatibus excepturi laboriosam ea.
+        </p>
+    </body>
+</html>

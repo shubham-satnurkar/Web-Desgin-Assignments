@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta charset=utf-8>
+		<meta name="keyword" content=" html, css, javascript, php, jquery.">
+		<meta name=description content="Registration Form">
+		<meta name="author" content="shubham satnurkar">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Registration Form</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<section class="reg-form">
+			<h1>Registration Form</h1>
+			<form class="form" action="login.html" target="_blank">
+				<div class="form-group">
+					<label for="FirstName">First Name</label>
+					<input type="text" class="input" name="fname" placeholder="First Name" required>
+				</div>
+				<div class="form-group">
+					<label for="LastName">Last Name</label>
+					<input type="text" class="input" name="lname" placeholder="Last Name" required>
+				</div>
+				<div class="form-group">
+					<label for="Email">Email</label>
+					<input type="email" name="email" class="input" placeholder="xyz@email.com" required>
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" class="input" name="password"  placeholder="*********" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{5,10}" required>
+				</div>
+				<div class="form-group">
+					<label for="dob">Date Of Birth</label>
+					<input type="date" name="dob" class="input" required>
+				</div>
+				<div class="form-group gender">
+					<label for="Gender">Gender</label>
+						Male<input type="radio" name="gender" value="Male">
+						Female<input type="radio" name="gender" value="Femail">
+						Other<input type="radio" name="gender" value="Other">
+				</div>
+				<div class="form-group address">
+					<label for="address">Address</label>
+					<textarea name="address" rows="8" required placeholder="write here..."></textarea>
+				</div>
+				<div class="form-group">
+					<label for="city">City</label>
+					<select name="city" class="input" required>
+						<option value="Nagpur">Nagpur</option>
+						<option value="Amravati">Amravati</option>
+						<option value="Pune">Pune</option>
+						<option value="Mumbai">Mumbai</option>
+						<option value="Nashik">Nashik</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="state" >State</label>
+					<select name="state" required class="input">
+						<option value="Maharashtra">Maharashtra</option>
+						<option value="Gujrat">Gujrat</option>
+						<option value="Bengaluru">Bengaluru</option>
+						<option value="Chennai">Chennai</option>
+						<option value="West Bengal">West Bengal</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="country">Country</label>
+					<select name="country" class="input" required>
+						<option value="India">India</option>
+						<option value="Japan">Japan</option>
+						<option value="USA">USA</option>
+						<option value="UK">UK</option>
+						<option value="Russia "> Russia</option>
+					</select>
+				</div>
+				<div class="form-group ">
+					<label for="pincode">pincode</label>
+					<input type="text" class="input" name="pincode" minlength="6" maxlength="6" pattern="[0-9]*">
+				</div>
+				<div class="form-group ">
+					<label for="Mobile">Mobile</label>
+					<input type="text" class="input" name="mobile" minlength="10" maxlength="10" pattern="[0-9]*">
+				</div>
+
+				<div class="btn">
+					<input type="submit" name="register" value="Register">
+				</div>
+			</form>
+		</section>
+	</body>
+</html>
